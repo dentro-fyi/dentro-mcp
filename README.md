@@ -2,7 +2,7 @@
 
 Structured commerce data for AI agents. One MCP server, 22,000+ DTC brands, real-time product data, no scraping, no hallucination.
 
-[![npm version](https://img.shields.io/npm/v/@dentro/mcp.svg)](https://www.npmjs.com/package/@dentro/mcp)
+[![npm version](https://img.shields.io/npm/v/@dentro-fyi/mcp.svg)](https://www.npmjs.com/package/@dentro-fyi/mcp)
 [![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -27,7 +27,7 @@ Lets any MCP-compatible agent (Claude Desktop, Cursor, custom agents) query a cu
 ## Install
 
 ```bash
-npm install -g @dentro/mcp
+npm install -g @dentro-fyi/mcp
 ```
 
 Get an API key at [dentro.fyi](https://dentro.fyi) (free tier available).
@@ -41,7 +41,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "dentro": {
       "command": "npx",
-      "args": ["-y", "@dentro/mcp"],
+      "args": ["-y", "@dentro-fyi/mcp"],
       "env": {
         "DENTRO_API_KEY": "your-key-here"
       }
