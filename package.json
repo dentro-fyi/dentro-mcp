@@ -1,8 +1,9 @@
 {
   "name": "@dentro-fyi/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "dentro MCP server. Structured commerce data for AI agents. Connects Claude Desktop, Cursor, and any MCP client to 22,000+ DTC brands via dentro.fyi/api.",
+  "mcpName": "io.github.dentro-fyi/dentro",
   "bin": {
     "dentro-mcp": "src/index.js"
   },
