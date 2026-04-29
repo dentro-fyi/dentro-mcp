@@ -1,0 +1,49 @@
+{
+  "name": "@dentro/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "dentro MCP server. Structured commerce data for AI agents. Connects Claude Desktop, Cursor, and any MCP client to 22,000+ DTC brands via dentro.fyi/api.",
+  "bin": {
+    "dentro-mcp": "src/index.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "agents",
+    "commerce",
+    "ecommerce",
+    "shopping",
+    "claude",
+    "anthropic",
+    "agentic-commerce",
+    "product-data",
+    "dentro"
+  ],
+  "license": "MIT",
+  "author": "dentro",
+  "homepage": "https://dentro.fyi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dentro-fyi/dentro-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dentro-fyi/dentro-mcp/issues",
+    "email": "hello@dentro.fyi"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
