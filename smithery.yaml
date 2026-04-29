@@ -1,0 +1,33 @@
+name: dentro
+displayName: dentro
+description: Structured commerce data for AI agents. 22,000+ DTC brands, real prices, real stock, sub-second response. Five tools: discover_companies, search_products, get_product, list_categories, get_site_info.
+homepage: https://dentro.fyi
+repository: https://github.com/dentro-fyi/dentro-mcp
+license: MIT
+author: dentro
+
+tags:
+  - commerce
+  - shopping
+  - ecommerce
+  - product-data
+  - agentic-commerce
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - DENTRO_API_KEY
+    properties:
+      DENTRO_API_KEY:
+        type: string
+        description: API key from dentro.fyi (free tier available)
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@dentro-fyi/mcp'],
+      env: {
+        DENTRO_API_KEY: config.DENTRO_API_KEY
+      }
+    })
